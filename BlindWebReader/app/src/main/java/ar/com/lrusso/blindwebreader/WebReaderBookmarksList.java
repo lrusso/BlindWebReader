@@ -17,7 +17,6 @@ public class WebReaderBookmarksList extends Activity
     	{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.bookmarkslist);
-		GlobalVars.lastActivity = WebReaderBookmarksList.class;
 		bookmarks = (TextView) findViewById(R.id.bookmarks);
 		bookmarksgoto = (TextView) findViewById(R.id.bookmarksgoto);
 		bookmarksdelete = (TextView) findViewById(R.id.bookmarksdelete);
@@ -30,7 +29,6 @@ public class WebReaderBookmarksList extends Activity
 	@Override public void onResume()
 		{
 		super.onResume();
-		GlobalVars.lastActivity = WebReaderBookmarksList.class;
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=4;
 		GlobalVars.selectTextView(bookmarks,false);

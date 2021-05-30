@@ -19,7 +19,6 @@ public class WebReaderPageViewer extends Activity
     	{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.browserpageviewer);
-		GlobalVars.lastActivity = WebReaderPageViewer.class;
 		pagetitle = (TextView) findViewById(R.id.readpagetitle);
 		pagetext = (TextView) findViewById(R.id.readpagetext);
 		pagelinks = (TextView) findViewById(R.id.pagelinks);
@@ -33,7 +32,6 @@ public class WebReaderPageViewer extends Activity
 	@Override public void onResume()
 		{
 		super.onResume();
-		GlobalVars.lastActivity = WebReaderPageViewer.class;
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=6;
 		GlobalVars.selectTextView(pagetitle,false);
@@ -109,7 +107,7 @@ public class WebReaderPageViewer extends Activity
 			break;
 			
 			case 2: //READ PAGE TEXT
-			GlobalVars.talk(GlobalVars.browserWebText);
+			GlobalVars.speakWebText(GlobalVars.browserWebText);
 			break;
 
 			case 3: //PAGE LINKS

@@ -15,6 +15,8 @@ import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class GlobalVars extends Application
 	{
@@ -33,7 +35,6 @@ public class GlobalVars extends Application
 	public static Toast 					mToast2 = null;
 	public static boolean 					firstToast = true;
 	public static boolean 					toastMode = false; //FOR TESTING
-	public static Class 					lastActivity; //IN ANDROID 2.X, AFTER A CALL ENDS, THE SYSTEM POPUPS THE CALL LOG ACTIVITY. BECAUSE OF THAT, THE APP SETS THE LAST ACTIVITY IN ORDER TO POPUP IT AFTER THE CALL. 
 	public static String 					inputModeResult = null;
 
 	//VARIABLES FOR THE WEB READER
@@ -457,5 +458,39 @@ public class GlobalVars extends Application
 			return false;
 			}
 		return true;
+		}
+
+	public static void speakWebText(String charSequence)
+		{
+		Pattern re = Pattern.compile("[^.!?\\s][^.!?]*(?:[.!?](?!['\"]?\\s|$)[^.!?]*)*[.!?]?['\"]?(?=\\s|$)", Pattern.MULTILINE | Pattern.COMMENTS);
+		Matcher reMatcher = re.matcher(charSequence);
+
+		int position = 0;
+		int sizeOfChar = charSequence.length();
+		String testString = charSequence.substring(position,sizeOfChar);
+
+		while(reMatcher.find())
+			{
+			String temp = "";
+
+			try
+				{
+				temp = testString.substring(charSequence.lastIndexOf(reMatcher.group()), charSequence.indexOf(reMatcher.group())+reMatcher.group().length());
+				tts.speak(temp, TextToSpeech.QUEUE_ADD, null);
+				}
+				catch (Exception e)
+				{
+				try
+					{
+					temp = testString.substring(0, testString.length());
+					tts.speak(temp, TextToSpeech.QUEUE_ADD, null);
+					break;
+					}
+					catch(Exception e2)
+					{
+					break;
+					}
+				}
+			}
 		}
 	}

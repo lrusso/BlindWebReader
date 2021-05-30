@@ -2,8 +2,6 @@ package ar.com.lrusso.blindwebreader;
 
 import java.util.ArrayList;
 
-import android.content.res.AssetFileDescriptor;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
@@ -28,7 +26,6 @@ public class InputVoice extends Activity
 		{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.inputvoice);
-		GlobalVars.lastActivity = InputVoice.class;
 		start = (TextView) findViewById(R.id.startrecognition);
 		resultsTextview = (TextView) findViewById(R.id.possibleresults);
 		enter = (TextView) findViewById(R.id.enter);
@@ -42,7 +39,6 @@ public class InputVoice extends Activity
 	@Override public void onResume()
 		{
 		super.onResume();
-		GlobalVars.lastActivity = InputVoice.class;
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=4;
 		GlobalVars.selectTextView(start,false);
@@ -233,31 +229,15 @@ public class InputVoice extends Activity
 					{
 					}
 
-				// PLAYING THE BEEP.WAV SOUND FILE
-				MediaPlayer mp = new MediaPlayer();
-				try
-					{
-					AssetFileDescriptor descriptor = getAssets().openFd("beep.wav");
-					mp.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
-					descriptor.close();
-					mp.prepare();
-					mp.setVolume(1f, 1f);
-					mp.setLooping(false);
-					mp.setOnCompletionListener(new MediaPlayer.OnCompletionListener()
-						{
-						@Override public void onCompletion(MediaPlayer mp)
-							{
-							startSpeechRecognizer();
-							}
-						});
-					mp.start();
-					}
-					catch(NullPointerException e)
-					{
-					}
-					catch (Exception e)
-					{
-					}
+				sr = SpeechRecognizer.createSpeechRecognizer(this);
+				sr.setRecognitionListener(new listener());
+				Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+				intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Voice Recognition...");
+				intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, this.getPackageName());
+				intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS,2000);
+				intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 5000);
+				sr.startListening(intent);
 				}
 				catch(NullPointerException e)
 				{
@@ -339,18 +319,5 @@ public class InputVoice extends Activity
 	public boolean onKeyDown(int keyCode, KeyEvent event)
 		{
 		return GlobalVars.detectKeyDown(keyCode);
-		}
-
-	private void startSpeechRecognizer()
-		{
-		sr = SpeechRecognizer.createSpeechRecognizer(this);
-		sr.setRecognitionListener(new listener());
-		Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-		intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
-		intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Voice Recognition...");
-		intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, this.getPackageName());
-		intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS,2000);
-		intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 5000);
-		sr.startListening(intent);
 		}
 	}

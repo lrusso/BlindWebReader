@@ -15,7 +15,6 @@ public class WebReaderBookmarksDelete extends Activity
     	{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.bookmarksdelete);
-		GlobalVars.lastActivity = WebReaderBookmarksDelete.class;
 		todelete = (TextView) findViewById(R.id.bookmarks);
 		delete = (TextView) findViewById(R.id.bookmarksdelete);
 		goback = (TextView) findViewById(R.id.goback);
@@ -27,7 +26,6 @@ public class WebReaderBookmarksDelete extends Activity
 	@Override public void onResume()
 		{
 		super.onResume();
-		GlobalVars.lastActivity = WebReaderBookmarksDelete.class;
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=3;
 		GlobalVars.selectTextView(todelete,false);

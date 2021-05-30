@@ -23,12 +23,13 @@ public class WebReader extends Activity implements TextToSpeech.OnInitListener
 	private TextView browsergoogle;
 	private TextView bookmarks;
 	private TextView privacypolicy;
-	
+
+	private boolean canSpeakOnResume = true;
+
     @Override protected void onCreate(Bundle savedInstanceState)
     	{
     	super.onCreate(savedInstanceState);
     	setContentView(R.layout.browser);
-		GlobalVars.lastActivity = WebReader.class;
 		browsergoogle = (TextView) findViewById(R.id.browsergoogle);
 		bookmarks = (TextView) findViewById(R.id.bookmarks);
 		privacypolicy = (TextView) findViewById(R.id.privacypolicy);
@@ -50,7 +51,6 @@ public class WebReader extends Activity implements TextToSpeech.OnInitListener
 	@Override public void onResume()
 		{
 		super.onResume();
-		GlobalVars.lastActivity = WebReader.class;
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=3;
 		GlobalVars.selectTextView(browsergoogle,false);
@@ -79,7 +79,26 @@ public class WebReader extends Activity implements TextToSpeech.OnInitListener
 			}
 			else
 			{
-			GlobalVars.talk(getResources().getString(R.string.layoutBrowserOnResume));
+			if (canSpeakOnResume==true)
+				{
+				GlobalVars.talk(getResources().getString(R.string.layoutBrowserOnResume));
+				}
+				else
+				{
+				canSpeakOnResume = true;
+				}
+			}
+		}
+
+	@Override public void onDestroy()
+		{
+		super.onDestroy();
+		try
+			{
+			GlobalVars.tts.stop();
+			}
+			catch(Exception e)
+			{
 			}
 		}
 
@@ -229,16 +248,7 @@ public class WebReader extends Activity implements TextToSpeech.OnInitListener
 		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 		if (requestCode == PERMISSION_REQUEST_CODE)
 			{
-			try
-				{
-				if (checkSelfPermission(Manifest.permission.RECORD_AUDIO)==PackageManager.PERMISSION_GRANTED)
-					{
-					GlobalVars.talk(getResources().getString(R.string.app_welcome));
-					}
-				}
-				catch(Exception e)
-				{
-				}
+			canSpeakOnResume = false;
 			}
 		}
 	}
