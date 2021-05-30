@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Web Reader</string>
+
+	<string name="app_welcome">Добро пожаловать на программу экранного доступа для пользователей с нарушением зрения, разработанный Лэонардо Хавиер Руссо. Проведите пальцем вверх или вниз, чтобы прослушать меню, а потом проведите вправо, чтобы выбрать нужную опцию. Если устройство имеет физическую клавиатуру, вы можете использовать стрелки. Если у Вас установлено TalkBack, используйте два пальца для выбора нужного меню.</string>
+
+	<string name="layoutBrowserSearchInGoogle">Найдите в Google или введите адрес</string>
+	<string name="layoutBrowserListBookmarks">Перейти в закладки</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. Подождите пока загрузится страница.</string>
+	<string name="layoutBrowserErrorPendingRequest">Ошибка. Веб-страница загружается, подождите, пожалуйста.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">Веб-страница загружается, подождите, пожалуйста</string>
+	<string name="layoutBrowserPageNotFound">Страница не найдена. Пожалуйста, проверьте подключение к Интернету и веб-адрес.</string>
+	<string name="layoutBrowserPrivacyPolicy">политика конфиденциальности</string>
+	<string name="layoutBrowserPrivacyPolicyText">Политика конфиденциальности Blind Web Reader. Опубликовано 29 мая 2021 г. Я, Леонардо Хавьер Руссо, считаю вашу информацию важной и публикую это Заявление о конфиденциальности, чтобы сообщить вам, какую информацию я собираю и как я использую ее для персонализации и постоянного улучшения вашего опыта. Это Заявление о конфиденциальности применяется к App Blind Web Reader и его службам и не распространяется на продукт или услугу, которые не связаны с этим заявлением или не содержат его заявления о конфиденциальности соответственно. 1 - Сбор информации. а. Персональная информация. Я не собираю личную информацию. Личная информация - это информация, которая идентифицирует вас или другое лицо, например, ваше имя и фамилию, физические адреса, адреса электронной почты, телефон, факс, камеру, микрофон, GPS или любую информацию, хранящуюся на вашем устройстве. б. Информация неличного характера. Я не собираю вашу неличную информацию, когда вы используете приложение для чтения вслепую или посещаете мой веб-сайт, включая информацию о вашем устройстве, операционную систему, журналы. c. Информация, которую вы предоставляете. Я не собираю вашу информацию, когда вы общаетесь со мной. Как я использую информацию. а. Персональная информация. Я не храню Личную информацию и поэтому не раскрываю вашу Личную информацию. б. Информация неличного характера. Я не продаю, не обмениваю или иным образом не передаю вашу информацию третьим лицам. Я не объединяю неличную информацию с личной информацией (например, объединяю ваше имя с вашим уникальным номером пользовательского устройства). Свяжитесь со мной. Если у вас есть какие-либо вопросы или комментарии по поводу этой Политики или наших методов обеспечения конфиденциальности, или вы хотите сообщить о любых нарушениях Политики или злоупотреблении App Blind Web Reader или Веб-сайтом, свяжитесь со мной по адресу info@lrusso.com. Изменения. В настоящую Политику конфиденциальности могут вноситься изменения, которые время от времени не ограничивают ваши права в соответствии с настоящей Политикой конфиденциальности. Я буду публиковать любые изменения политики конфиденциальности на этой странице, поэтому, пожалуйста, просматривайте ее периодически. Если вы не согласны с любыми изменениями данной Политики, вы можете немедленно прекратить любое использование всех Услуг. Дальнейшее использование вами App Blind Web Reader после публикации любых изменений в этой Политике будет означать ваше согласие с пересмотренной Политикой.</string>
+	<string name="layoutBrowserOnResume">Вы находитесь в главном меню</string>
+
+	<string name="layoutBrowserPageViewerReadTitle">Читать заголовок страницы</string>
+	<string name="layoutBrowserPageViewerReadTitle2">Заголовок страницы&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Читать текст страницы</string>
+	<string name="layoutBrowserPageViewerPageLinks">Ссылки страницы</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Ссылки страницы. Проведите пальцем вправо или влево, чтобы прослушать все ссылки.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Ссылка&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;от&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">Настоящая страница не имеет ссылок.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">Сначала Вы должны выбрать ссылку.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Перейти на выбранную ссылку</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Добавить страницу в закладки</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">Страница добавлена</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">Закладка уже существует</string>
+	<string name="layoutBrowserPageViewerOnResume">Вы находитесь в меню веб-страницы браузера</string>
+	
+	<string name="layoutBookmarksListList">Список закладок</string>
+	<string name="layoutBookmarksListList2">Список закладок. Проведите пальцем вправо или влево, чтобы прослушать все закладки.</string>
+	<string name="layoutBookmarksListList3">Нет закладок</string>
+	<string name="layoutBookmarksListGoToLink">Перейти на выбранную закладку</string>
+	<string name="layoutBookmarksListDelete">Удалить выбранную закладку</string>
+	<string name="layoutBookmarksListDeleted">Закладка удалена. Вы находитесь в меню списка закладок</string>
+	<string name="layoutBookmarksListSelectError">Сначала вы должны выбрать закладку</string>
+	<string name="layoutBookmarksListOnResume">Вы находитесь в меню списка закладок</string>
+	
+	<string name="layoutBookmarksDeleteToDelete">Закладка для удаления выбрана.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Подтвердить удаление</string>
+	<string name="layoutBookmarksDeleteOnResume">Вы находитесь в меню удаления закладок</string>
+
+	<string name="layoutInputVoiceOnResume">Вы находитесь в режиме ввода текста с помощью голосового управления</string>
+	<string name="layoutInputVoiceStartRecognition">Начать распознавание речи</string>
+	<string name="layoutInputVoiceStartRecognition2">Распознавание речи. Проведите пальцем вправо и начните говорить</string>
+	<string name="layoutInputVoicePossibleResult">Результат&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Результаты (</string>
+	<string name="layoutInputVoicePossibleResults2">Возможные результаты.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Проведите пальцем вправо, чтобы услышать каждый результат.</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Ввести выбранный результат</string>
+	<string name="layoutInputVoiceNoResultToSelect">Сначала Вы должны выбрать результат</string>
+	<string name="layoutInputVoiceNoRecognition">Нет возможных результатов. Пожалуйста, повторите попытку или проверьте, если распознавание речи на устройстве требует подключение к Интернету. Если это так, проверьте состояние подключения к Интернету.</string>
+	<string name="layoutInputVoiceSystemError">Ошибка системы. Распознавание речи не может быть выполнено</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Отмена и возврат в предыдущее меню</string>
+
+	<string name="TTSRequiredTitle">Ошибка</string>
+	<string name="TTSRequiredMessage">Синтезатор не найден. Пожалуйста, загрузите синтезатор Google TTS (бесплатно) для того, чтобы данное приложение правильно работало.</string>
+	<string name="TTSRequiredButton">Хорошо, я буду.</string>
+
+	<string name="backToPreviousMenu">Вернуться на предыдущее меню</string>
+</resources>

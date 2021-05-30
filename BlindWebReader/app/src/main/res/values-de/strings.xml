@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Web Reader</string>
+
+	<string name="app_welcome">Willkommen auf dem Kommunikationssystem für Blinde und Sehbehinderte, das von Leonardo Javier Russo entwickelt wurde. Lassen Sie den Zeigefinger nach oben oder nach unten auf dem Display gleiten, um durch das Auswahlmenü zu navigieren; und nach rechts, um die gewünschte Option auszuwählen. Wenn Ihr Gerät eine physische Tastatur hat, können Sie die Richtungspfeile benutzen. Falls TalkBack aktiviert ist, benutzen Sie die Finger, um durch das Auswahlmenü zu navigieren und die Menüoptionen auszuwählen.</string>
+
+	<string name="layoutBrowserSearchInGoogle">Suchen Sie mit Google oder geben Sie die Adresse ein</string>
+	<string name="layoutBrowserListBookmarks">Auflistung der Lieblingssongs</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. Warten Sie bitte bis die gewünschte Seite geladen ist.</string>
+	<string name="layoutBrowserErrorPendingRequest">FEHLERMELDUNG. Eine Webseite wird gerade geladen, warten Sie bitte einen Augenblick.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">Webseite gerade geladen, bitte warten Sie</string>
+	<string name="layoutBrowserPageNotFound">Seite nicht gefunden. Überprüfen Sie bitte Ihre Internetverbindung und die eingegebene e mail Adresse.</string>
+	<string name="layoutBrowserPrivacyPolicy">Datenschutz Bestimmungen</string>
+	<string name="layoutBrowserPrivacyPolicyText">Blind Web Reader-Datenschutzrichtlinie. Veröffentlicht am 29. Mai 2021. Ich, Leonardo Javier Russo, halte Ihre Informationen für wichtig und veröffentliche diese Datenschutzerklärung, um Sie darüber zu informieren, welche Informationen ich sammle und wie ich sie verwende, um Ihre Erfahrung zu personalisieren und kontinuierlich zu verbessern. Diese Datenschutzerklärung gilt für den App Blind Web Reader und seine Dienste und gilt nicht für Produkte oder Dienstleistungen, die nicht mit dieser Erklärung verknüpft sind oder deren Datenschutzerklärung enthalten. 1 - Informationen sammeln. ein. Persönliche Informationen. Ich sammle keine persönlichen Daten. Persönliche Informationen sind Informationen, die Sie oder eine andere Person identifizieren, z. B. Ihr Vor- und Nachname, physische Adressen, E-Mail-Adressen, Telefon, Fax, Kamera, Mikrofon, GPS oder alle in Ihrem Gerät gespeicherten Informationen. b. Nicht personenbezogene Daten. Ich sammle Ihre nicht persönlichen Daten nicht, wenn Sie den App Blind Web Reader verwenden oder meine Website besuchen, einschließlich Ihrer Geräteinformationen, Ihres Betriebssystems und Ihrer Protokolle. c. Informationen, die Sie bereitstellen. Ich sammle Ihre Daten nicht, wenn Sie mit mir kommunizieren. Wie ich Informationen verwende. ein. Persönliche Informationen. Ich speichere keine persönlichen Daten und gebe daher Ihre persönlichen Daten nicht weiter. b. Nicht personenbezogene Daten. Ich verkaufe, handele oder übertrage Ihre Daten nicht an Dritte. Ich kombiniere keine nicht personenbezogenen Daten mit personenbezogenen Daten (z. B. die Kombination Ihres Namens mit Ihrer eindeutigen Benutzergerätenummer). Kontaktiere mich. Wenn Sie Fragen oder Kommentare zu dieser Richtlinie oder unseren Datenschutzpraktiken haben oder Verstöße gegen die Richtlinie oder einen Missbrauch des App Blind Web Reader oder der Website melden möchten, kontaktieren Sie mich bitte unter info@lrusso.com. Änderungen. Diese Datenschutzrichtlinie kann sich ändern, was Ihre Rechte gemäß dieser Datenschutzrichtlinie von Zeit zu Zeit nicht einschränkt. Ich werde alle Änderungen der Datenschutzrichtlinie auf dieser Seite veröffentlichen, also überprüfen Sie sie bitte regelmäßig. Wenn Sie Änderungen dieser Richtlinie nicht zustimmen, können Sie die Nutzung aller Dienste sofort einstellen. Wenn Sie den App Blind Web Reader nach der Veröffentlichung von Änderungen an dieser Richtlinie weiterhin verwenden, stimmen Sie der überarbeiteten Richtlinie zu.</string>
+	<string name="layoutBrowserOnResume">Sie befinden sich jetzt im Hauptmenü</string>
+
+	<string name="layoutBrowserPageViewerReadTitle">Seitenüberschrift lesen</string>
+	<string name="layoutBrowserPageViewerReadTitle2">Die Seitenüberschrift ist&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Den Seitentext lesen</string>
+	<string name="layoutBrowserPageViewerPageLinks">Hyperlinks auf der Seite</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Hyperlink auf der Seite. Schieben Sie den Finger nach rechts oder nach links auf dem Display, um jeden Hyperlink zu hören.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Hyperlinkverbindung&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;von&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">Die aktuelle Seite hat keinen Hyperlink.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">Zuerst wählen Sie bitte einen Hyperlink aus.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Den ausgewählten Weblink öffnen</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Aktuelle Seite zu Favoriten hinfügen</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">Die Lieblingsseite wurde hingefügt</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">Die Lieblingsseite ist schon vorhanden</string>
+	<string name="layoutBrowserPageViewerOnResume">Sie befinden sich jetzt im Menü von einer Webseite des Webbrowsers</string>
+	
+	<string name="layoutBookmarksListList">Favoritenliste</string>
+	<string name="layoutBookmarksListList2">Favoritenliste. Schieben Sie den Finger nach rechts oder nach links auf dem Display, um jeden Favorit zu hören.</string>
+	<string name="layoutBookmarksListList3">Keine Favoriten vorhanden</string>
+	<string name="layoutBookmarksListGoToLink">Den Favorit öffnen</string>
+	<string name="layoutBookmarksListDelete">Den ausgewählten Favorit löschen</string>
+	<string name="layoutBookmarksListDeleted">Der Favorit wurde gelöscht und Sie befinden sich jetzt im Menü Favoritenliste</string>
+	<string name="layoutBookmarksListSelectError">Wählen Sie zuerst einen Favorit aus</string>
+	<string name="layoutBookmarksListOnResume">Sie befinden sich jetzt im Menü Favoritenliste</string>
+	
+	<string name="layoutBookmarksDeleteToDelete">Der ausgewählte Favorit wird gelöscht.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Löschung bestätigen</string>
+	<string name="layoutBookmarksDeleteOnResume">Sie befinden sich jetzt im Menü zur Löschung der Favoriten</string>
+
+	<string name="layoutInputVoiceOnResume">Sie befinden sich jetzt im Menü Texteingabe über Spracherkennung</string>
+	<string name="layoutInputVoiceStartRecognition">Starten Sie die Spracherkennung</string>
+	<string name="layoutInputVoiceStartRecognition2">Spracherkennung. Schieben Sie den Finger nach rechts auf dem Display und beginnen Sie zu sprechen.</string>
+	<string name="layoutInputVoicePossibleResult">Fazit&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Fazits (</string>
+	<string name="layoutInputVoicePossibleResults2">Mögliche Fazits.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Schieben Sie den Finger nach rechts auf dem Display, um jedes Fazit zu hören</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Ausgewähltes Fazit eingeben</string>
+	<string name="layoutInputVoiceNoResultToSelect">Zuerst müssen Sie ein Fazit auswählen</string>
+	<string name="layoutInputVoiceNoRecognition">Es gab keine möglichen Fazits. Versuchen Sie es bitte noch einmal oder überprüfen Sie, ob die Spracherkennung Ihres Geräts eine Internetverbindung benötigt. Wenn ja, überprüfen Sie bitte den Status Ihrer Internetverbindung.</string>
+	<string name="layoutInputVoiceSystemError">Systemfehler. Die Spracherkennung konnte nicht gestartet werden</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Abbrechen und zum vorherigen Menü zurückkehren</string>
+
+	<string name="TTSRequiredTitle">Fehlermeldung</string>
+	<string name="TTSRequiredMessage">Die App Stimme Synthese wurde nicht gefunden. Laden Sie bitte die App Stimme Synthese von Google kostenlos herunter, damit diese App richtig funktioniert.</string>
+	<string name="TTSRequiredButton">Ok, ich werde.</string>
+
+	<string name="backToPreviousMenu">Zum vorherigen Menü zurückkehren</string>
+</resources>

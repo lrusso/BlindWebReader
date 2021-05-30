@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Web Reader</string>
+
+	<string name="app_welcome">Selamat datang ke sistem Blind Web Reader yang dibangunkan oleh Leonardo Javier Russo. Slaid keatas dan kebawah untuk melihat pilihan dan slaid kekanan untuk memilih. Jika peranti anda mempunyai papan kekunci fizikal, anda boleh menggunakan kekunci arah. Jika anda menggunakan TalkBack, slaid dan pilih menu menggunakan dua jari.</string>
+
+	<string name="layoutBrowserSearchInGoogle">Telusuri dengan Google atau masukkan alamat</string>
+	<string name="layoutBrowserListBookmarks">Pergi ke Bookmarks</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. Sila tunggu sehingga laman web yang diminta telah dimuatkan.</string>
+	<string name="layoutBrowserErrorPendingRequest">RALAT. Laman web sedang diproses, sila tunggu sehingga tamat.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">Laman diproses, tunggu sebentar</string>
+	<string name="layoutBrowserPageNotFound">Halaman tidak dijumpai. Sila semak sambungan Internet anda dan alamat web.</string>
+	<string name="layoutBrowserPrivacyPolicy">Kebijakan pribadi</string>
+	<string name="layoutBrowserPrivacyPolicyText">Kebijakan Privasi Blind Web Reader. Dirilis pada 29 Mei 2021. Saya, Leonardo Javier Russo, menganggap informasi Anda penting dan merilis Pernyataan Privasi ini untuk memberi tahu Anda informasi apa yang saya kumpulkan dan bagaimana saya menggunakannya untuk mempersonalisasi dan terus meningkatkan pengalaman Anda. Pernyataan Privasi ini berlaku untuk App Blind Web Reader dan layanannya dan tidak berlaku untuk produk atau layanan yang tidak tertaut ke pernyataan ini atau memiliki pernyataan privasinya masing-masing. 1 - Mengumpulkan informasi. Sebuah. Informasi pribadi. Saya tidak mengumpulkan Informasi Pribadi. Informasi Pribadi adalah informasi yang mengidentifikasi Anda atau orang lain, seperti nama depan dan nama belakang Anda, alamat fisik, alamat email, telepon, faks, kamera, mikrofon, GPS, atau informasi apa pun yang disimpan dalam perangkat Anda. b. Informasi Non-Pribadi. Saya tidak mengumpulkan informasi non-pribadi Anda saat Anda menggunakan App Blind Web Reader atau mengunjungi Situs web saya, termasuk informasi perangkat, sistem operasi, log. c. Informasi yang Anda berikan. Saya tidak mengumpulkan informasi Anda saat Anda berkomunikasi dengan saya. Bagaimana Saya Menggunakan Informasi. Sebuah. Informasi pribadi. Saya tidak menyimpan Informasi Pribadi dan oleh karena itu saya tidak mengungkapkan Informasi Pribadi Anda. b. Informasi Non-Pribadi. Saya tidak menjual, memperdagangkan, atau mentransfer informasi Anda kepada pihak luar. Saya tidak menggabungkan Informasi Non-Pribadi dengan Informasi Pribadi (seperti menggabungkan nama Anda dengan nomor Perangkat Pengguna unik Anda). Hubungi saya. Jika Anda memiliki pertanyaan atau komentar tentang Kebijakan ini atau praktik privasi kami, atau untuk melaporkan pelanggaran apa pun terhadap Kebijakan atau penyalahgunaan App Blind Web Reader atau Situs Web, silakan hubungi saya di info@lrusso.com. Perubahan. Kebijakan Privasi ini dapat berubah yang tidak akan mengurangi hak Anda berdasarkan Kebijakan Privasi ini dari waktu ke waktu, saya akan memposting perubahan kebijakan privasi apa pun di halaman ini, jadi harap meninjaunya secara berkala. Jika Anda tidak menyetujui modifikasi apa pun pada Kebijakan ini, Anda dapat segera menghentikan semua penggunaan semua Layanan. Jika Anda terus menggunakan App Blind Web Reader setelah memposting modifikasi apa pun pada Kebijakan ini, Anda dianggap menerima Kebijakan yang direvisi.</string>
+	<string name="layoutBrowserOnResume">Anda berada di menu utama</string>
+
+	<string name="layoutBrowserPageViewerReadTitle">Baca Tajuk Halaman</string>
+	<string name="layoutBrowserPageViewerReadTitle2">Tajuk halaman web adalah&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Baca Teks Halaman</string>
+	<string name="layoutBrowserPageViewerPageLinks">Pautan laman web</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Pautan laman web. Slaid kekanan atau kekiri untuk mendengar salah satu.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Penghubung&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;daripada&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">Laman web semasa tidak mempunyai pautan.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">Pertama anda mesti memilih pautan.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Pergi ke pautan pilihan</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Tambah laman semasa di Bookmarks</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">Bookmarks telah ditambah</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">Bookmarks telah wujud</string>
+	<string name="layoutBrowserPageViewerOnResume">Anda berada di menu laman web pelayar</string>
+	
+	<string name="layoutBookmarksListList">Senarai Bookmarks</string>
+	<string name="layoutBookmarksListList2">Senarai bookmarks. Slaid kekanan atau kekiri untuk mendengar salah satu.</string>
+	<string name="layoutBookmarksListList3">Tiada bookmarks</string>
+	<string name="layoutBookmarksListGoToLink">Pergi ke bookmark pilihan</string>
+	<string name="layoutBookmarksListDelete">Padam bookmark pilihan</string>
+	<string name="layoutBookmarksListDeleted">Bookmark telah dipadam dan anda berada di menu senarai bookmarks</string>
+	<string name="layoutBookmarksListSelectError">Anda harus memilih bookmark dahulu</string>
+	<string name="layoutBookmarksListOnResume">Anda berada di menu senarai bookmarks</string>
+	
+	<string name="layoutBookmarksDeleteToDelete">Bookmarks pilihan untuk dipadamkan.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Pasti padam</string>
+	<string name="layoutBookmarksDeleteOnResume">Anda berada di menu memadam bookmark</string>
+
+	<string name="layoutInputVoiceOnResume">Anda berada di input mod teks  menggunakan menu pengecaman suara</string>
+	<string name="layoutInputVoiceStartRecognition">Mula pengecaman suara</string>
+	<string name="layoutInputVoiceStartRecognition2">Pengecaman suara. Slaid kekanan dan kemudian cakap</string>
+	<string name="layoutInputVoicePossibleResult">Keputusan&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Keputusan (</string>
+	<string name="layoutInputVoicePossibleResults2">Keputusan diperoleh.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Slaid kekanan untuk mendengar</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Masukkan keputusan pilihan</string>
+	<string name="layoutInputVoiceNoResultToSelect">Anda perlu memilih keputusan</string>
+	<string name="layoutInputVoiceNoRecognition">Tiada keputusan diperoleh. Sila cuba lagi atau pastikan adakah pengecaman suara memerlukan internet. Jika ya, periksa status hubungan internet.</string>
+	<string name="layoutInputVoiceSystemError">Sistem ralat. Pengecaman suara tidak boleh dibaca</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Batal dan kembali kepada menu sebelum</string>
+
+	<string name="TTSRequiredTitle">Ralat</string>
+	<string name="TTSRequiredMessage">Perisian TTS tidak dijumpai. Sila muat turun aplikasi Google TTS (aplikasi percuma) untuk membolehkan app ni berfungsi.</string>
+	<string name="TTSRequiredButton">OK, saya akan melakukannya.</string>
+
+	<string name="backToPreviousMenu">Kembali ke menu sebelum</string>
+</resources>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Web Reader</string>
+
+	<string name="app_welcome">Bem vindo ao comunicador para cegos desenvolvido por Leonardo Javier Russo. Deslize para cima ou para baixo para navegar pelo menu e deslize para a direita para seleccionar a opção desejada. Se seu despositivo tem um teclado físico pode utilizar os direcionais. Caso tenha TalkBack ativado, utilize dois dedos para deslizar e selecionar os menus.</string>
+
+	<string name="layoutBrowserSearchInGoogle">Pesquise no Google ou insira o endereço</string>
+	<string name="layoutBrowserListBookmarks">Lista de Favoritos</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. Por favor espere enquanto termina de carregar a página solicitada.</string>
+	<string name="layoutBrowserErrorPendingRequest">ERRO. Se está carregando uma página Web, por favor, espere que a finalize.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">Carregando página, por favor espere</string>
+	<string name="layoutBrowserPageNotFound">Página não encontrada. Por favor verifique sua conexão à internet e o endereço digitado.</string>
+	<string name="layoutBrowserPrivacyPolicy">Política de Privacidade</string>
+	<string name="layoutBrowserPrivacyPolicyText">Política de Privacidade do Blind Web Reader. Divulgado em 29 de maio de 2021. Eu, Leonardo Javier Russo, considero suas informações significativas e divulgo esta Declaração de Privacidade para informá-lo quais informações eu coleto e como as utilizo para personalizar e melhorar continuamente sua experiência. Esta Declaração de Privacidade se aplica ao App Blind Web Reader e seus serviços e não se aplica ao produto ou serviço que não esteja vinculado a esta declaração ou tenha sua declaração de privacidade, respectivamente. 1 - Coletando informações. uma. Informações pessoais. Eu não coleto informações pessoais. Informações pessoais são informações que identificam você ou outra pessoa, como seu nome e sobrenome, endereços físicos, endereços de e-mail, telefone, fax, câmera, microfone, GPS ou qualquer informação armazenada em seu dispositivo. b. Informações não pessoais. Não recolho as suas informações não pessoais quando está a utilizar o App Blind Web Reader ou a visitar o meu site, incluindo as informações do seu dispositivo, sistema operativo, registos. c. Informações que você fornece. Eu não recolho suas informações quando você se comunica comigo. Como uso as informações. uma. Informações pessoais. Eu não armazeno informações pessoais e, portanto, não divulgo suas informações pessoais. b. Informações não pessoais. Eu não vendo, negocio ou de outra forma transfiro suas informações para terceiros. Eu não combino Informações Não Pessoais com Informações Pessoais (como combinar seu nome com seu número exclusivo de Dispositivo de Usuário). Contate-me. Se você tiver dúvidas ou comentários sobre esta Política ou nossas práticas de privacidade, ou para relatar qualquer violação da Política ou abuso do App Blind Web Reader ou do site, entre em contato comigo em info@lrusso.com. Alterar. Esta Política de Privacidade pode mudar, o que não reduzirá seus direitos sob esta Política de Privacidade de tempos em tempos. Vou postar quaisquer alterações da política de privacidade nesta página, portanto, revise-a periodicamente. Se você não concordar com quaisquer modificações a esta Política, você pode interromper imediatamente todo o uso de todos os Serviços. Seu uso contínuo do App Blind Web Reader após a publicação de quaisquer modificações nesta Política constituirá sua aceitação da Política revisada.</string>
+	<string name="layoutBrowserOnResume">Agora você se encontra no menu principal</string>
+
+	<string name="layoutBrowserPageViewerReadTitle">Ler título da página</string>
+	<string name="layoutBrowserPageViewerReadTitle2">O título da página é&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Ler texto da página</string>
+	<string name="layoutBrowserPageViewerPageLinks">Links da página</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Links da página. Deslize a direita ou esquerda para escutar cada um.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Link&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;de&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">A página Web atual não tem nenhum link.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">Primeiro deve selecionar um link.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Ir para o link selecionado</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Adicionar página atual aos Favoritos</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">O Favorito foi adicionado</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">O Favorito já existe</string>
+	<string name="layoutBrowserPageViewerOnResume">Agora você se encontra no menu de uma página do navegador web</string>
+	
+	<string name="layoutBookmarksListList">Listado de Favoritos</string>
+	<string name="layoutBookmarksListList2">Lista de Favoritos. Deslize a direita ou esquerda para escutar cada um.</string>
+	<string name="layoutBookmarksListList3">Não há Favoritos</string>
+	<string name="layoutBookmarksListGoToLink">Ir para o Favorito selecionado</string>
+	<string name="layoutBookmarksListDelete">Excluir Favorito selecionado</string>
+	<string name="layoutBookmarksListDeleted">O favorito foi removido e agora você se encontra na lista do menu favoritos</string>
+	<string name="layoutBookmarksListSelectError">Primeiro deve selecionar um Favorito</string>
+	<string name="layoutBookmarksListOnResume">Agora você se encontra na lista do menu favoritos</string>
+	
+	<string name="layoutBookmarksDeleteToDelete">Favorito selecionado para a eliminação.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Confirmar eliminação</string>
+	<string name="layoutBookmarksDeleteOnResume">Agora você se encontra no menu de eliminação de favorito</string>
+
+	<string name="layoutInputVoiceOnResume">Agora você se encontra no menu de entrada de texto através de reconhecimento de voz</string>
+	<string name="layoutInputVoiceStartRecognition">Iniciar reconhecimento de voz</string>
+	<string name="layoutInputVoiceStartRecognition2">Reconhecimento de voz. Deslize para a direita e, em seguida, fale</string>
+	<string name="layoutInputVoicePossibleResult">Resultado&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Resultados (</string>
+	<string name="layoutInputVoicePossibleResults2">Possíveis resultados.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Deslize para a direita para escutar cada um</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Entrar no resultado selecionado</string>
+	<string name="layoutInputVoiceNoResultToSelect">Primeiro debe selecionar um resultado</string>
+	<string name="layoutInputVoiceNoRecognition">Não houve resultados possíveis. Por favor, tente novamente ou verifique se o reconhecimento de voz do seu dispositivo requer uma conexão à internet. Se for o caso, verifique a sua conexão à internet.</string>
+	<string name="layoutInputVoiceSystemError">Erro do sistema. O reconhecimento de voz não pôde ser iniciado</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Cancelar e voltar ao menu anterior</string>
+
+	<string name="TTSRequiredTitle">Erro</string>
+	<string name="TTSRequiredMessage">App de síntese de voz não encontrado. Por favor baixe o App de síntese de voz do Google (gratuito) para que este App funcione corretamente.</string>
+	<string name="TTSRequiredButton">Sim eu vou.</string>
+
+	<string name="backToPreviousMenu">Voltar ao menu anterior</string>
+</resources>

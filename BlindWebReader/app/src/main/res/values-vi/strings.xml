@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Web Reader</string>
+
+    <string name="app_welcome">Chào mừng đến với hệ thống Blind Web Reader phát triển bởi Leonardo Javier Russo. Vuốt lên và xuống để duyệt qua các tùy chọn và vuốt qua phải để kích hoạt mục đã chọn. Nếu thiết bị của bạn có bàn phím vật lý, bạn có thể dùng các phím điều hướng. Nếu đang dùng TalkBack, vuốt và kích hoạt các tùy chọn bằng hai ngón tay.</string>
+
+	<string name="layoutBrowserSearchInGoogle">Tìm kiếm với Google hoặc nhập địa chỉ</string>
+	<string name="layoutBrowserListBookmarks">Đi đến điểm đánh dấu</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. vui lòng đợi đến khi trang web được tải về.</string>
+	<string name="layoutBrowserErrorPendingRequest">Lỗi. Một trang web đang được tải về. vui lòng đợi đến khi tải xong.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">Đang tải trang. vui lòng đợi</string>
+	<string name="layoutBrowserPageNotFound">Không tìm thấy trang. Vui lòng kiểm tra kết nối mạng của bạn và địa chỉ web.</string>
+	<string name="layoutBrowserPrivacyPolicy">Chính sách bảo mật</string>
+	<string name="layoutBrowserPrivacyPolicyText">Chính sách quyền riêng tư của Blind Web Reader. Được phát hành vào ngày 29 tháng 5 năm 2021. Tôi, Leonardo Javier Russo, coi thông tin của bạn là quan trọng và đưa ra Tuyên bố về Quyền riêng tư này để thông báo cho bạn những thông tin tôi thu thập và cách tôi sử dụng thông tin đó để cá nhân hóa và liên tục cải thiện trải nghiệm của bạn. Tuyên bố về Quyền riêng tư này áp dụng cho App Blind Web Reader và các dịch vụ của nó và không áp dụng cho sản phẩm hoặc dịch vụ không liên kết đến tuyên bố này hoặc có tuyên bố về quyền riêng tư tương ứng. 1 - Thu thập thông tin. a. Thông tin cá nhân. Tôi không thu thập Thông tin Cá nhân. Thông tin Cá nhân là thông tin nhận dạng bạn hoặc người khác, chẳng hạn như họ và tên của bạn, địa chỉ thực, địa chỉ email, điện thoại, fax, máy ảnh, micrô, GPS hoặc bất kỳ thông tin nào được lưu trữ trong thiết bị của bạn. b. Thông tin phi cá nhân. Tôi không thu thập thông tin phi cá nhân của bạn khi bạn đang sử dụng App Blind Web Reader hoặc truy cập Trang web của tôi, bao gồm thông tin thiết bị, hệ thống vận hành, nhật ký của bạn. c. Thông tin bạn cung cấp. Tôi không thu thập thông tin của bạn khi bạn giao tiếp với tôi. Cách tôi sử dụng thông tin. a. Thông tin cá nhân. Tôi không lưu trữ Thông tin cá nhân và do đó tôi không tiết lộ Thông tin cá nhân của bạn. b. Thông tin phi cá nhân. Tôi không bán, trao đổi hoặc chuyển giao thông tin của bạn cho các bên bên ngoài. Tôi không kết hợp Thông tin Phi Cá nhân với Thông tin Cá nhân (chẳng hạn như kết hợp tên của bạn với số Thiết bị Người dùng duy nhất của bạn). Liên hệ với tôi. Nếu bạn có bất kỳ câu hỏi hoặc nhận xét nào về Chính sách này hoặc các thực tiễn bảo mật của chúng tôi, hoặc để báo cáo bất kỳ vi phạm Chính sách hoặc lạm dụng App Blind Web Reader hoặc Trang web, vui lòng liên hệ với tôi tại info@lrusso.com. Các thay đổi. Chính sách Bảo mật này có thể thay đổi, điều này sẽ không làm giảm quyền của bạn theo Chính sách Bảo mật này theo thời gian, tôi sẽ đăng bất kỳ thay đổi nào về chính sách bảo mật trên trang này, vì vậy vui lòng xem xét nó định kỳ. Nếu bạn không đồng ý với bất kỳ sửa đổi nào đối với Chính sách này, bạn có thể ngừng ngay lập tức tất cả việc sử dụng tất cả các Dịch vụ. Việc bạn tiếp tục sử dụng App Blind Web Reader sau khi đăng bất kỳ sửa đổi nào đối với Chính sách này sẽ cấu thành việc bạn chấp nhận Chính sách đã sửa đổi.</string>
+	<string name="layoutBrowserOnResume">Giờ bạn đang ở trình đơn chính</string>
+
+	<string name="layoutBrowserPageViewerReadTitle">Đọc tên trang</string>
+	<string name="layoutBrowserPageViewerReadTitle2">Tên trang web là&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Đọc nội dung trang</string>
+	<string name="layoutBrowserPageViewerPageLinks">Các liên kết của trang web</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Các liên kết của trang web. Vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Liên kết&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;của&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">Trang web hiện tại không có liên kết nào.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">Trước tiên bạn phải chọn một liên kết.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Đến liên kết đã chọn</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Thêm trang hiện tại vào ưa thích</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">Đã thêm vào ưa thích</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">Đã có trong danh sách ưa hích</string>
+	<string name="layoutBrowserPageViewerOnResume">Giờ bạn đang ở trình đơn trang web của trình duyệt</string>
+	
+	<string name="layoutBookmarksListList">Danh sách trang web ưa thích</string>
+	<string name="layoutBookmarksListList2">Danh sách trang web ưa thích. Vuốt sang phải hoặc trái để nghe từng mục.</string>
+	<string name="layoutBookmarksListList3">Không có trang web ưa thích nào</string>
+	<string name="layoutBookmarksListGoToLink">Mở trang web ưa thích đã chọn</string>
+	<string name="layoutBookmarksListDelete">Xóa trang web ưa thích đã chọn</string>
+	<string name="layoutBookmarksListDeleted">Đã xóa trang web ưa thích và giờ bạn đang ở trình đơn danh sách các trang web ưa thích</string>
+	<string name="layoutBookmarksListSelectError">Trước tiên bạn phải chọn một trang web</string>
+	<string name="layoutBookmarksListOnResume">Giờ bạn đang ở trình đơn danh sách trang web ưa thích</string>
+	
+	<string name="layoutBookmarksDeleteToDelete">Đã chọn trang web để xóa.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Xác nhận xóa</string>
+	<string name="layoutBookmarksDeleteOnResume">Giờ bạn đang ở trình đơn xóa trang web ưa thích</string>
+
+	<string name="layoutInputVoiceOnResume">Giờ bạn đang ở trình đơn chế độ nhập văn bản bằng giọng nói</string>
+	<string name="layoutInputVoiceStartRecognition">Bắt đầu nhận dạng giọng nói</string>
+	<string name="layoutInputVoiceStartRecognition2">Nhận dạng giọng nói. Vuốt sang phải rồi nói</string>
+	<string name="layoutInputVoicePossibleResult">Kết quả&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Các kết quả (</string>
+	<string name="layoutInputVoicePossibleResults2">Kết quả khả thi.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Vuốt sang phải để nghe từng mục</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Nhập kết quả đã chọn</string>
+	<string name="layoutInputVoiceNoResultToSelect">Trước tiên bạn phải chọn một kết quả</string>
+	<string name="layoutInputVoiceNoRecognition">Không có kết quả nào khả thi. Vui lòng thử lại hoặc kiểm tra xem việc nhận dạng giọng nói trên thiết bị của bạn có yêu cầu kết nối mạng không. Nếu có, kiểm tra trạng thái kết nối mạng của bạn.</string>
+	<string name="layoutInputVoiceSystemError">Lỗi hệ thống. Không thể thực hiện nhận dạng giọng nói</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Hủy và trở về trình đơn trước</string>
+
+	<string name="TTSRequiredTitle">Lỗi</string>
+	<string name="TTSRequiredMessage">Không tìm thấy công cụ TTS. Vui lòng tải ứng dụng Google TTS (miễn phí) để dùng với ứng dụng này.</string>
+	<string name="TTSRequiredButton">OK, tôi sẽ.</string>
+
+	<string name="backToPreviousMenu">Trở về trình đơn trước</string>
+</resources>

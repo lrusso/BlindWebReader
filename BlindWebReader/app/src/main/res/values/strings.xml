@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Blind Web Reader</string>
+
+    <string name="app_welcome">Welcome to the Blind Web Reader system developed by Leonardo Javier Russo. Slide up and down to browse between options and slide right to choose the selected item. If your device has a physical keyboard, you can use the directional keys. If you are using TalkBack, slide and select menus using two fingers.</string>
+
+	<string name="layoutBrowserSearchInGoogle">Search with Google or enter address</string>
+	<string name="layoutBrowserListBookmarks">Go to Bookmarks</string>
+	<string name="layoutBrowserAWebPageItsBeenLoading">. Please wait until the requested web page is been loaded.</string>
+	<string name="layoutBrowserErrorPendingRequest">ERROR. A web page it\'s been loading, please wait until it\'s finish.</string>
+	<string name="layoutBrowserLoadingPagePleaseWait">Loading page, please wait</string>
+	<string name="layoutBrowserPageNotFound">Page not found. Please check your Internet connection and the web address.</string>
+	<string name="layoutBrowserPrivacyPolicy">Privacy policy</string>
+	<string name="layoutBrowserPrivacyPolicyText">Blind Web Reader Privacy Policy. Released on May 29, 2021. I, Leonardo Javier Russo, regard your information significant and release this Privacy Statement to inform you what information I collect and how I use it to personalize and continually improve you experience. This Privacy Statement applies to the App Blind Web Reader and its services and does not apply to the product or service that which does not link to this statement or has its privacy statement respectively. 1 - Collecting information. a. Personal Information. I do not collect Personal Information. Personal Information is information that identifies you or another person, such as your first name and last name, physical addresses, email addresses, telephone, fax, camera, microphone, GPS, or any information stored within your device. b. Non-personal Information. I do not collect your non-personal information when you are using the App Blind Web Reader or visiting my Website, including your device information, operation system, logs. c. Information you provide. I do not collect your information when you communicate with me. How I Use Information. a. Personal Information. I do not store Personal Information and therefore I do not disclose your Personal Information. b. Non-Personal Information. I do not sell, trade, or otherwise transfer to outside parties your information. I do not combine Non-Personal Information with Personal Information (such as combining your name with your unique User Device number). Contact Me. If you have any questions or comments about this Policy or our privacy practices, or to report any violations of the Policy or abuse of the App Blind Web Reader or the Website, please contact me at info@lrusso.com. Changes. This Privacy Policy may change which will not reduce your rights under this Privacy Policy from time to time, I will post any privacy policy changes on this page, so please review it periodically. If you do not agree to any modifications to this Policy, your could immediately stop all use of all the Services. Your continued use of the App Blind Web Reader following the posting of any modifications to this Policy will constitute your acceptance of the revised Policy.</string>
+	<string name="layoutBrowserOnResume">Now you are at the main menu</string>
+
+	<string name="layoutBrowserPageViewerReadTitle">Read Page Title</string>
+	<string name="layoutBrowserPageViewerReadTitle2">The web page title is&#160;</string>
+	<string name="layoutBrowserPageViewerReadText">Read Page Text</string>
+	<string name="layoutBrowserPageViewerPageLinks">Web Page Links</string>
+	<string name="layoutBrowserPageViewerPageLinks2">Web Page Links. Slide right or left to hear each one.</string>
+	<string name="layoutBrowserPageViewerPageLinks3">Link&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks3Of">&#160;of&#160;</string>
+	<string name="layoutBrowserPageViewerPageLinks4">The current web page doesn\'t have any links.</string>
+	<string name="layoutBrowserPageViewerPageLinkSelectError">First you must select a link.</string>
+	<string name="layoutBrowserPageViewerGoToLink">Go to selected link</string>
+	<string name="layoutBrowserPageViewerAddToBookmarks">Add current page to Bookmarks</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksAdded">The bookmark has been added</string>
+	<string name="layoutBrowserPageViewerAddToBookmarksRepeated">The bookmark already exists</string>
+	<string name="layoutBrowserPageViewerOnResume">Now you are at the webpage menu of the browser</string>
+
+	<string name="layoutBookmarksListList">Bookmarks List</string>
+	<string name="layoutBookmarksListList2">Bookmarks List. Slide right or left to hear each one.</string>
+	<string name="layoutBookmarksListList3">There are no bookmarks</string>
+	<string name="layoutBookmarksListGoToLink">Go to selected bookmark</string>
+	<string name="layoutBookmarksListDelete">Delete selected bookmark</string>
+	<string name="layoutBookmarksListDeleted">The bookmark was deleted and now you are at the bookmarks list menu</string>
+	<string name="layoutBookmarksListSelectError">First you must select a bookmark</string>
+	<string name="layoutBookmarksListOnResume">Now you are at the bookmarks list menu</string>
+
+	<string name="layoutBookmarksDeleteToDelete">Selected bookmark for deletion.&#160;</string>
+	<string name="layoutBookmarksDeleteDelete">Confirm delete</string>
+	<string name="layoutBookmarksDeleteOnResume">Now you are at the delete bookmark menu</string>
+
+	<string name="layoutInputVoiceOnResume">Now you are at the input text mode using voice recognition menu</string>
+	<string name="layoutInputVoiceStartRecognition">Start voice recognition</string>
+	<string name="layoutInputVoiceStartRecognition2">Voice recognition. Slide right and then speak</string>
+	<string name="layoutInputVoicePossibleResult">Result&#160;</string>
+	<string name="layoutInputVoicePossibleResults">Results (</string>
+	<string name="layoutInputVoicePossibleResults2">Possible results.&#160;</string>
+	<string name="layoutInputVoicePossibleResults3">. Slide right to hear each one</string>
+	<string name="layoutInputVoiceEnterSelectedResult">Enter selected result</string>
+	<string name="layoutInputVoiceNoResultToSelect">First you must select a result</string>
+	<string name="layoutInputVoiceNoRecognition">No possible results. Please, try again or check if the voice recognition on your device requires an Internet connection. If so, check your Internet connection status.</string>
+	<string name="layoutInputVoiceSystemError">System Error. Voice recognition can\'t be executed</string>
+	<string name="layoutInputVoiceCancelAndGoBack">Cancel and go back to the previous menu</string>
+
+	<string name="TTSRequiredTitle">Error</string>
+	<string name="TTSRequiredMessage">TTS software not found. Please download Google TTS App (free App) in order to this App to work.</string>
+	<string name="TTSRequiredButton">Ok, I will.</string>
+
+	<string name="backToPreviousMenu">Go back to the previous menu</string>
+</resources>
