@@ -133,7 +133,7 @@ public class WebReaderPageViewer extends Activity
 				}
 				else
 				{
-				new WebReaderThreadGoTo().execute(GlobalVars.browserWebLinks.get(linkLocation).substring(GlobalVars.browserWebLinks.get(linkLocation).indexOf("|") + 1, GlobalVars.browserWebLinks.get(linkLocation).length()));
+				GlobalVars.loadURL(this,GlobalVars.browserWebLinks.get(linkLocation).substring(GlobalVars.browserWebLinks.get(linkLocation).indexOf("|") + 1, GlobalVars.browserWebLinks.get(linkLocation).length()));
 				}
 			break;
 			

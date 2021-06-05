@@ -64,11 +64,11 @@ public class WebReader extends Activity implements TextToSpeech.OnInitListener
 
 				if (GlobalVars.inputModeResult.toLowerCase().startsWith("www.") && GlobalVars.inputModeResult.length()>=9)
 					{
-					new WebReaderThreadGoTo().execute("https://" + GlobalVars.inputModeResult);
+					GlobalVars.loadURL(this,"https://" + GlobalVars.inputModeResult);
 					}
 					else
 					{
-					new WebReaderThreadGoTo().execute("https://www.google.com/custom?q=" + GlobalVars.inputModeResult);
+					GlobalVars.loadURL(this,"https://www.google.com/custom?q=" + GlobalVars.inputModeResult);
 					}
 				}
 				else

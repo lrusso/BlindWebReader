@@ -4,10 +4,15 @@ import android.app.*;
 import android.content.*;
 import android.graphics.*;
 import android.media.*;
+import android.os.Handler;
 import android.speech.tts.*;
 import android.text.*;
 import android.text.style.*;
 import android.view.*;
+import android.webkit.ValueCallback;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.*;
 
 import java.io.*;
@@ -40,12 +45,15 @@ public class GlobalVars extends Application
 	//VARIABLES FOR THE WEB READER
 	public static boolean 					bookmarkWasDeleted = false;
 	public static int 						bookmarkToDeleteIndex = -1;
+	public static String					browserGoTo = "about:blank";
 	public static boolean 					browserRequestInProgress = false;
 	public static String 					browserWebTitle = null;
 	public static String 					browserWebURL = null;
 	public static String 					browserWebText = null;
 	public static List<String> 				browserWebLinks = new ArrayList<String>();
 	public static List<String> 				browserBookmarks = new ArrayList<String>();
+	public static WebView 					browserConnector = null; // TO LOAD THE WEB CONTENT
+	public static ProgressDialog 			browserPleaseWaitDialog;
 
 	//GLOBAL FUNCTIONS REQUIRED BY ACTIVITIES
 	public static String getLanguage()
@@ -462,35 +470,95 @@ public class GlobalVars extends Application
 
 	public static void speakWebText(String charSequence)
 		{
-		Pattern re = Pattern.compile("[^.!?\\s][^.!?]*(?:[.!?](?!['\"]?\\s|$)[^.!?]*)*[.!?]?['\"]?(?=\\s|$)", Pattern.MULTILINE | Pattern.COMMENTS);
-		Matcher reMatcher = re.matcher(charSequence);
-
-		int position = 0;
-		int sizeOfChar = charSequence.length();
-		String testString = charSequence.substring(position,sizeOfChar);
-
-		while(reMatcher.find())
+		if (toastMode==true)
 			{
-			String temp = "";
+			talk(charSequence);
+			}
+		else
+			{
+			Pattern re = Pattern.compile("[^.!?\\s][^.!?]*(?:[.!?](?!['\"]?\\s|$)[^.!?]*)*[.!?]?['\"]?(?=\\s|$)", Pattern.MULTILINE | Pattern.COMMENTS);
+			Matcher reMatcher = re.matcher(charSequence);
 
-			try
+			int position = 0;
+			int sizeOfChar = charSequence.length();
+			String testString = charSequence.substring(position,sizeOfChar);
+
+			while(reMatcher.find())
 				{
-				temp = testString.substring(charSequence.lastIndexOf(reMatcher.group()), charSequence.indexOf(reMatcher.group())+reMatcher.group().length());
-				tts.speak(temp, TextToSpeech.QUEUE_ADD, null);
-				}
-				catch (Exception e)
-				{
+				String temp = "";
+
 				try
 					{
-					temp = testString.substring(0, testString.length());
+					temp = testString.substring(charSequence.lastIndexOf(reMatcher.group()), charSequence.indexOf(reMatcher.group())+reMatcher.group().length());
 					tts.speak(temp, TextToSpeech.QUEUE_ADD, null);
-					break;
 					}
-					catch(Exception e2)
+					catch (Exception e)
 					{
-					break;
+					try
+						{
+						temp = testString.substring(0, testString.length());
+						tts.speak(temp, TextToSpeech.QUEUE_ADD, null);
+						break;
+						}
+						catch(Exception e2)
+						{
+						break;
+						}
 					}
 				}
 			}
+		}
+
+	public static void loadURL(final Activity activity, String url)
+		{
+		GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutBrowserLoadingPagePleaseWait));
+
+		if (browserConnector==null)
+			{
+			browserConnector = new WebView(GlobalVars.context);
+			browserConnector.getSettings().setJavaScriptEnabled(true);
+			browserConnector.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
+			browserConnector.getSettings().setAppCacheEnabled(false);
+			browserConnector.setWebViewClient(new WebViewClient()
+				{
+				@Override public void onPageFinished(WebView view, final String url)
+					{
+					new Handler().postDelayed(new Runnable()
+						{
+						@Override public void run()
+							{
+							browserConnector.evaluateJavascript(
+								"(function() { return ('<html>'+document.getElementsByTagName('html')[0].innerHTML+'</html>'); })();",
+								new ValueCallback<String>()
+									{
+									@Override public void onReceiveValue(String html)
+										{
+										try
+											{
+											new WebReaderThreadGoTo(html).execute();
+											}
+											catch (Exception e)
+											{
+											GlobalVars.talk(GlobalVars.context.getResources().getString(R.string.layoutBrowserPageNotFound));
+											}
+										}
+									});
+							}
+						}, 1500);
+					}
+				});
+			}
+
+		browserConnector.clearHistory();
+		browserConnector.clearCache(true);
+		browserConnector.clearFormData();
+
+		GlobalVars.browserGoTo = url;
+		browserConnector.loadUrl(url);
+
+		browserPleaseWaitDialog = new ProgressDialog(activity);
+		browserPleaseWaitDialog.setMessage(GlobalVars.context.getResources().getString(R.string.layoutBrowserLoadingPagePleaseWait));
+		browserPleaseWaitDialog.setCancelable(false);
+		browserPleaseWaitDialog.show();
 		}
 	}

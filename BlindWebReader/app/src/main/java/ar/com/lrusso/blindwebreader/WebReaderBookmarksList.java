@@ -119,7 +119,7 @@ public class WebReaderBookmarksList extends Activity
 				}
 				else
 				{
-				new WebReaderThreadGoTo().execute(GlobalVars.browserBookmarks.get(selectedBookmark).substring(GlobalVars.browserBookmarks.get(selectedBookmark).indexOf("|") + 1, GlobalVars.browserBookmarks.get(selectedBookmark).length()));
+				GlobalVars.loadURL(this,GlobalVars.browserBookmarks.get(selectedBookmark).substring(GlobalVars.browserBookmarks.get(selectedBookmark).indexOf("|") + 1, GlobalVars.browserBookmarks.get(selectedBookmark).length()));
 				}
 			break;
 			
