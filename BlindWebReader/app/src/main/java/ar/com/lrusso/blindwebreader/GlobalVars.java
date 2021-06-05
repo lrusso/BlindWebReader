@@ -152,17 +152,9 @@ public class GlobalVars extends Application
 				GlobalVars.tts.stop();
 				try
 					{
-					AudioManager mAudioManager = (AudioManager) GlobalVars.context.getSystemService(GlobalVars.context.AUDIO_SERVICE);
-					if (mAudioManager.getRingerMode()==AudioManager.RINGER_MODE_NORMAL)
-						{
-						if (a.length()>TTS_MAX_INPUT_LENGTH)
-							{
-							a = a.substring(0, TTS_MAX_INPUT_LENGTH - 1);
-							}
-						HashMap<String, String> params = new HashMap<String, String>();
-						params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID,"stringId");
-						tts.speak(a, TextToSpeech.QUEUE_FLUSH, params);
-						}
+					HashMap<String, String> params = new HashMap<String, String>();
+					params.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID,"stringId");
+					tts.speak(a, TextToSpeech.QUEUE_FLUSH, params);
 					}
 					catch(Exception e)
 					{

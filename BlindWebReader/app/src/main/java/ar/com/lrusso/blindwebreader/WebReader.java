@@ -7,6 +7,7 @@ import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.AudioManager;
 import android.net.Uri;
 import android.os.*;
 import android.speech.tts.TextToSpeech;
@@ -35,6 +36,24 @@ public class WebReader extends Activity implements TextToSpeech.OnInitListener
 		privacypolicy = (TextView) findViewById(R.id.privacypolicy);
 		GlobalVars.activityItemLocation=0;
 		GlobalVars.activityItemLimit=3;
+
+		try
+			{
+			// RAISING THE SYSTEM VOLUME
+			AudioManager audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
+
+			int volume_current = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
+			int volume_half = (int)(audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC) * 0.5);
+			int volume_desired = (int)(audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC) * 0.75);
+
+			if (volume_current<=volume_half)
+				{
+				audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, volume_desired, 0);
+				}
+			}
+			catch(Exception e)
+			{
+			}
 
 		GlobalVars.context = this;
 		GlobalVars.startTTS(GlobalVars.tts);
