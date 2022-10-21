@@ -143,17 +143,6 @@ public class InputVoice extends Activity
 
     	public void onPartialResults(Bundle partialResults)
             {
-			stringResults.clear();
-			selectedValue = -1;
-    		if (GlobalVars.activityItemLocation==2)
-    			{
-    			GlobalVars.setText(resultsTextview, true, getResources().getString(R.string.layoutInputVoicePossibleResults) + stringResults.size() + ")");
-    			}
-				else
-				{
-				GlobalVars.setText(resultsTextview, false, getResources().getString(R.string.layoutInputVoicePossibleResults) + stringResults.size() + ")");
-				}
-    		GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceNoRecognition));
             }
 
     	public void onEvent(int eventType, Bundle params)
@@ -236,7 +225,6 @@ public class InputVoice extends Activity
 				intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Voice Recognition...");
 				intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, this.getPackageName());
 				intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS,2000);
-				intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_COMPLETE_SILENCE_LENGTH_MILLIS, 5000);
 				sr.startListening(intent);
 				}
 				catch(NullPointerException e)
