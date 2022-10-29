@@ -233,7 +233,6 @@ public class InputVoice extends Activity
 				intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL,RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
 				intent.putExtra(RecognizerIntent.EXTRA_PROMPT,"Voice Recognition...");
 				intent.putExtra(RecognizerIntent.EXTRA_CALLING_PACKAGE, this.getPackageName());
-				intent.putExtra(RecognizerIntent.EXTRA_SPEECH_INPUT_POSSIBLY_COMPLETE_SILENCE_LENGTH_MILLIS,2000);
 				sr.startListening(intent);
 				}
 				catch(NullPointerException e)
