@@ -21,6 +21,7 @@ public class InputVoice extends Activity
 	private int selectedValue = -1;
 	private TextView enter;
 	private TextView goback;
+	private boolean proccessingAudio = false;
 
 	@Override protected void onCreate(Bundle savedInstanceState)
 		{
@@ -100,6 +101,7 @@ public class InputVoice extends Activity
 				{
 				GlobalVars.setText(resultsTextview, false, getResources().getString(R.string.layoutInputVoicePossibleResults) + stringResults.size() + ")");
 				}
+			proccessingAudio = false;
     		GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceNoRecognition));
             }
 
@@ -129,14 +131,17 @@ public class InputVoice extends Activity
 					{
 					GlobalVars.setText(resultsTextview, false, getResources().getString(R.string.layoutInputVoicePossibleResults) + stringResults.size() + ")");
 					}
+				proccessingAudio = false;
     			GlobalVars.talk(getResources().getString(R.string.layoutInputVoicePossibleResults2) + stringResults.size());
     			}
 				catch(NullPointerException e)
 				{
+				proccessingAudio = false;
 				GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceSystemError));
 				}
     			catch(Exception e)
     			{
+				proccessingAudio = false;
    				GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceSystemError));
     			}
             }
@@ -152,6 +157,7 @@ public class InputVoice extends Activity
 		
 	public void select()
 		{
+		if (proccessingAudio==true){return;}
 		switch (GlobalVars.activityItemLocation)
 			{
 			case 1: //START RECOGNITION
@@ -193,11 +199,13 @@ public class InputVoice extends Activity
 
 	public void execute()
 		{
+		if (proccessingAudio==true){return;}
 		switch (GlobalVars.activityItemLocation)
 			{
 			case 1: //START RECOGNITION
 			try
 				{
+				proccessingAudio = true;
 				stringResults.clear();
 				selectedValue = -1;
 
@@ -216,6 +224,7 @@ public class InputVoice extends Activity
 					}
 					catch(Exception e)
 					{
+					proccessingAudio = false;
 					}
 
 				sr = SpeechRecognizer.createSpeechRecognizer(this);
@@ -229,10 +238,12 @@ public class InputVoice extends Activity
 				}
 				catch(NullPointerException e)
 				{
+				proccessingAudio = false;
 				GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceSystemError));
 				}
 				catch(Exception e)
 				{
+				proccessingAudio = false;
 				GlobalVars.talk(getResources().getString(R.string.layoutInputVoiceSystemError));
 				}
 			break;
@@ -274,6 +285,7 @@ public class InputVoice extends Activity
 		
 	@Override public boolean onTouchEvent(MotionEvent event)
 		{
+		if (proccessingAudio==true){return super.onTouchEvent(event);}
 		int result = GlobalVars.detectMovement(event);
 		switch (result)
 			{
@@ -290,6 +302,7 @@ public class InputVoice extends Activity
 
 	public boolean onKeyUp(int keyCode, KeyEvent event)
 		{
+		if (proccessingAudio==true){return super.onKeyUp(keyCode, event);}
 		int result = GlobalVars.detectKeyUp(keyCode);
 		switch (result)
 			{
@@ -306,6 +319,7 @@ public class InputVoice extends Activity
 
 	public boolean onKeyDown(int keyCode, KeyEvent event)
 		{
+		if (proccessingAudio==true){return super.onKeyDown(keyCode, event);}
 		return GlobalVars.detectKeyDown(keyCode);
 		}
 	}
