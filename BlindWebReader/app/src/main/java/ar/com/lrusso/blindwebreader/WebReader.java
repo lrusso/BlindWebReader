@@ -109,7 +109,7 @@ public class WebReader extends Activity implements TextToSpeech.OnInitListener
 			}
 		}
 
-	@Override public void onDestroy()
+	@Override protected void onDestroy()
 		{
 		super.onDestroy();
 		try
@@ -121,7 +121,19 @@ public class WebReader extends Activity implements TextToSpeech.OnInitListener
 			}
 		}
 
-	public void onInit(int status)
+		@Override protected void onStop()
+		{
+		super.onStop();
+		try
+			{
+				GlobalVars.tts.stop();
+			}
+			catch(Exception e)
+			{
+			}
+		}
+
+		public void onInit(int status)
 		{
 		if (status == TextToSpeech.SUCCESS)
 			{

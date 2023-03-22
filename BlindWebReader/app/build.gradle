@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 31
+    compileSdkVersion 33
 
     defaultConfig {
         applicationId "ar.com.lrusso.blindwebreader"
         minSdkVersion 19
-        targetSdkVersion 31
-        versionCode 8
-        versionName "1.3.5"
+        targetSdkVersion 33
+        versionCode 9
+        versionName "1.3.6"
     }
 
     buildTypes {

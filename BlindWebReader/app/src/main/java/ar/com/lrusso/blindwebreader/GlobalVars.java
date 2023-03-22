@@ -510,7 +510,6 @@ public class GlobalVars extends Application
 			browserConnector = new WebView(GlobalVars.context);
 			browserConnector.getSettings().setJavaScriptEnabled(true);
 			browserConnector.getSettings().setCacheMode(WebSettings.LOAD_NO_CACHE);
-			browserConnector.getSettings().setAppCacheEnabled(false);
 			browserConnector.setWebViewClient(new WebViewClient()
 				{
 				@Override public void onPageFinished(WebView view, final String url)
